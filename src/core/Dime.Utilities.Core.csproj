@@ -11,7 +11,7 @@
     <Description>All purpose utilities that extend the capabilities of the most common Microsoft assemblies</Description>
     <VersionPrefix>1.2.2</VersionPrefix>
     <Authors>Dimenics</Authors>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netcoreapp2.0</TargetFrameworks>
     <AssemblyName>Dime.Utilities.Core</AssemblyName>
     <PackageId>Dime.Utilities.Core</PackageId>
     <PackageIconUrl>http://dimenuget.azurewebsites.net/Images/dimenuget.png</PackageIconUrl>
