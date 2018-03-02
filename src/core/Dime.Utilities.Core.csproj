@@ -9,9 +9,9 @@
 
   <PropertyGroup>
     <Description>All purpose utilities that extend the capabilities of the most common Microsoft assemblies</Description>
-    <VersionPrefix>1.0.4</VersionPrefix>
+    <VersionPrefix>1.2.2</VersionPrefix>
     <Authors>Dimenics</Authors>
-    <TargetFrameworks>netstandard2.0;netcoreapp2.0;netcoreapp1.1;net461</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <AssemblyName>Dime.Utilities.Core</AssemblyName>
     <PackageId>Dime.Utilities.Core</PackageId>
     <PackageIconUrl>http://dimenuget.azurewebsites.net/Images/dimenuget.png</PackageIconUrl>
@@ -20,17 +20,17 @@
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-    <Version>1.2.1</Version>
+    <Version>1.2.2</Version>
     <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <IncludeSource>True</IncludeSource>
     <IncludeSymbols>True</IncludeSymbols>
-    <FileVersion>1.2.1.0</FileVersion>
+    <FileVersion>1.2.2.0</FileVersion>
     <Copyright>Copyright © 2018</Copyright>
     <PackageProjectUrl>http://www.dimenics.com/products/dime-scheduler/</PackageProjectUrl>
     <RepositoryUrl>https://dimenicsbe.visualstudio.com/DefaultCollection/Dime.Scheduler V2</RepositoryUrl>
     <RepositoryType>Visual Studio Team Services</RepositoryType>
-    <PackageReleaseNotes>Added IsNot&lt;T&gt; utility</PackageReleaseNotes>
+    <PackageReleaseNotes>- 1.2.2: Only target .NET Standard 2.0</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
