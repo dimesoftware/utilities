@@ -19,10 +19,18 @@ namespace Dime.Utilities
             => string.IsNullOrEmpty(str) ? null : str;
 
         /// <summary>
+        /// Returns null if the string is null or empty
+        /// </summary>
+        /// <param name="str">The string to inspect</param>
+        /// <returns>The string if it has a value. Otherwise it will return null.</returns>
+        public static string NullIfEmptyOrWhiteSpace(this string str)
+            => string.IsNullOrWhiteSpace(str) ? null : str;
+
+        /// <summary>
         ///
         /// </summary>
         /// <param name="input"></param>
-        /// <param name="allowedCharacters"></param>
+        /// <param name="forbiddenCharacters"></param>
         /// <returns></returns>        
         public static string RemoveUnwantedCharacters(this string input, IEnumerable<char> forbiddenCharacters)
         {
