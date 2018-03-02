@@ -1,5 +1,6 @@
 ﻿using System;
 using Xunit;
+using static Xunit.Assert;
 
 namespace Dime.Utilities.Core.Tests
 {
@@ -13,7 +14,7 @@ namespace Dime.Utilities.Core.Tests
         {
             Uri uri = new Uri($"http://{sub}.dimescheduler.com");
             string subdomain = uri.GetSubdomain();  
-            Assert.True(sub == subdomain);
+            True(sub == subdomain);
         }
     }
 }

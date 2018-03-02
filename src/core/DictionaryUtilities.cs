@@ -12,10 +12,8 @@ namespace System.Collections.Generic
         /// </summary>
         /// <param name="source">The object to wrap into a dictionary</param>
         /// <returns>A dictionary with one record</returns>
-        public static IDictionary<string, object> ToDictionary(this object source)
-        {
-            return source.ToDictionary<object>();
-        }
+        public static IDictionary<string, object> ToDictionary(this object source) 
+            => source.ToDictionary<object>();
 
         /// <summary>
         /// Wraps an object into a dictionary
@@ -24,15 +22,15 @@ namespace System.Collections.Generic
         /// <returns>A dictionary with one record</returns>
         public static IDictionary<string, T> ToDictionary<T>(this object source)
         {
-            if (source == null)
-                throw new ArgumentNullException(nameof(source), "Unable to convert object to a dictionary. The source object is null.");
-
+            Ensure.That<ArgumentNullException>(source != null, nameof(source),
+                "Unable to convert object to a dictionary. The source object is null.");
+            
             Dictionary<string, T> dictionary = new Dictionary<string, T>();
             foreach (PropertyDescriptor property in TypeDescriptor.GetProperties(source))
             {
                 object value = property.GetValue(source);
-                if (value is T)
-                    dictionary.Add(property.Name, (T)value);
+                if (value is T variable)
+                    dictionary.Add(property.Name, variable);
             }
 
             return dictionary;

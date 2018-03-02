@@ -32,9 +32,7 @@
         /// <typeparam name="T">The type to compare the object to</typeparam>
         /// <param name="obj">The current object</param>
         /// <returns>True if the current object doesn't match <typeparamref name="T"/></returns>
-        public static bool IsNot<T>(this object obj)
-        {
-            return !(obj is T);
-        }
+        public static bool IsNot<T>(this object obj) 
+            => !(obj is T);
     }
 }

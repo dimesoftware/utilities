@@ -49,7 +49,7 @@ namespace Dime.Utilities
         /// <returns>A base64 encode string</returns>
         public static string Base64Encode(this string plainText)
         {
-            var plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
+            byte[] plainTextBytes = System.Text.Encoding.UTF8.GetBytes(plainText);
             return System.Convert.ToBase64String(plainTextBytes);
         }
 
@@ -60,7 +60,7 @@ namespace Dime.Utilities
         /// <returns>A base64 decoded string</returns>
         public static string Base64Decode(this string encodedText)
         {
-            var base64EncodedBytes = Convert.FromBase64String(encodedText);
+            byte[] base64EncodedBytes = Convert.FromBase64String(encodedText);
             return Encoding.UTF8.GetString(base64EncodedBytes);
         }
 

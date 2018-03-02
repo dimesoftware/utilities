@@ -11,10 +11,8 @@ namespace System.Reflection
         /// <typeparam name="T"></typeparam>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static T ToEnum<T>(this string value)
-        {
-            return (T)Enum.Parse(typeof(T), value, true);
-        }
+        public static T ToEnum<T>(this string value) 
+            => (T)Enum.Parse(typeof(T), value, true);
 
         /// <summary>
         /// Gets the value in the description attribute of the enum
