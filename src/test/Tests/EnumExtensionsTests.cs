@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Dime.Utilities.Core.Tests
+﻿namespace Dime.Utilities.Core.Tests
 {
     /// <summary>
     ///

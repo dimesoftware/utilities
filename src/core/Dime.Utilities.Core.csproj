@@ -11,31 +11,27 @@
     <Description>All purpose utilities that extend the capabilities of the most common Microsoft assemblies</Description>
     <VersionPrefix>1.2.2</VersionPrefix>
     <Authors>Dimenics</Authors>
-    <TargetFrameworks>netstandard2.0;netcoreapp2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;netcoreapp2.0;net461</TargetFrameworks>
     <AssemblyName>Dime.Utilities.Core</AssemblyName>
     <PackageId>Dime.Utilities.Core</PackageId>
-    <PackageIconUrl>http://dimenuget.azurewebsites.net/Images/dimenuget.png</PackageIconUrl>
-    <RuntimeFrameworkVersion Condition=" '$(TargetFramework)' == 'netcoreapp1.1' ">1.1.1</RuntimeFrameworkVersion>
+    <PackageIconUrl>http://dimenuget.azurewebsites.net/Images/dimenuget.png</PackageIconUrl> 
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-    <Version>1.2.2</Version>
+    <Version>1.2.3</Version>
     <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <IncludeSource>True</IncludeSource>
     <IncludeSymbols>True</IncludeSymbols>
-    <FileVersion>1.2.2.0</FileVersion>
+    <FileVersion>1.2.3.0</FileVersion>
     <Copyright>Copyright © 2018</Copyright>
     <PackageProjectUrl>http://www.dimenics.com/products/dime-scheduler/</PackageProjectUrl>
     <RepositoryUrl>https://dimenicsbe.visualstudio.com/DefaultCollection/Dime.Scheduler V2</RepositoryUrl>
     <RepositoryType>Visual Studio Team Services</RepositoryType>
-    <PackageReleaseNotes>- 1.2.2: Only target .NET Standard 2.0</PackageReleaseNotes>
+    <PackageReleaseNotes>- 1.2.2: Only target .NET Standard 2.0
+- 1.2.3: Also target .NET 4.6.1</PackageReleaseNotes>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.ComponentModel.Primitives" Version="4.3.0" />

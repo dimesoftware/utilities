@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace System.Collections.Generic
+﻿namespace System.Collections.Generic
 {
     /// <summary>
     /// Extensions on top of the generic <see cref="List{T}"/> class
