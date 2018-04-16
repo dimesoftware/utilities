@@ -151,7 +151,7 @@ namespace System
             ///     Thrown if <paramref cref="condition"/> is false
             /// </exception>
             public static void Is(bool condition, string message = "") 
-                => Ensure.That<ArgumentException>(condition, message);
+                => That<ArgumentException>(condition, message);
 
             /// <summary>
             /// Ensures given condition is false
@@ -173,7 +173,7 @@ namespace System
             ///     Thrown if <paramref cref="value" /> is null
             /// </exception>
             public static void NotNull(object value, string paramName = "") 
-                => Ensure.That<ArgumentNullException>(value != null, paramName);
+                => That<ArgumentNullException>(value != null, paramName);
 
             /// <summary>
             /// Ensures given value is not null
@@ -184,7 +184,7 @@ namespace System
             ///     Thrown if <paramref cref="value" /> is null
             /// </exception>
             public static void NotNull(object value, string paramName = "", string message = "") 
-                => Ensure.That<ArgumentNullException>(value != null, paramName, message);
+                => That<ArgumentNullException>(value != null, paramName, message);
 
             /// <summary>
             /// Ensures the given string value is not null or empty

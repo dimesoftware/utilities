@@ -14,7 +14,7 @@
         /// <param name="name">The name o the attribute</param>
         public DefaultDisplayAttribute(string name)
         {
-            this.Name = name;
+            Name = name;
         }
 
         #endregion Constructor

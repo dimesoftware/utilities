@@ -15,7 +15,7 @@ namespace System
         /// </summary>
         public EventQueue()
         {
-            this._queue = new Queue<T>();
+            _queue = new Queue<T>();
         }
 
         #endregion Constructor
