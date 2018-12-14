@@ -1,4 +1,8 @@
-﻿namespace Dime.Utilities
+﻿using System.Reflection;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+
+namespace Dime.Utilities
 {
     /// <summary>
     /// Utilities that extend the capabilities of working with numbers
@@ -54,5 +58,19 @@
         /// <returns>The original number if the value doesn't equal zero</returns>
         public static long? GetNullIfZero(this long? number) 
             => number.GetValueOrDefault() == default(int) ? null : number;
+
+        /// <summary>
+        ///
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        public static string Format<T>(this int input, string property)
+        {
+            PropertyInfo prop = typeof(T).GetProperty(property, BindingFlags.DeclaredOnly | BindingFlags.Public | BindingFlags.Instance);
+            DisplayFormatAttribute displayFormatAttribute = (DisplayFormatAttribute)prop.GetCustomAttributes(typeof(DisplayFormatAttribute), true).FirstOrDefault();
+
+            return string.Format(displayFormatAttribute.DataFormatString, input);
+        }
     }
 }

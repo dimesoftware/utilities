@@ -6,7 +6,7 @@ using System.Text;
 namespace Dime.Utilities
 {
     /// <summary>
-    /// Extensions on top of the <see cref="String"/> class
+    /// Extensions on top of the <see cref="string"/> class
     /// </summary>
     public static class StringUtilities
     {
@@ -107,5 +107,13 @@ namespace Dime.Utilities
         /// <returns>The first string that is not null or empty.</returns>        
         public static string Coalesce(params string[] items)
             => items.FirstOrDefault(s => !string.IsNullOrEmpty(s));
+
+        /// <summary>
+        /// Removes all whitespaces in the string
+        /// </summary>
+        /// <param name="input">The original string</param>
+        /// <returns>A string without any whitespaces</returns>
+        public static string TrimWhitespace(this string input)
+            => new string(input.ToCharArray().Where(c => !char.IsWhiteSpace(c)).ToArray());
     }
 }

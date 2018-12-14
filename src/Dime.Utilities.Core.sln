@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28407.52
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Utilities.Core", "core\Dime.Utilities.Core.csproj", "{7D468B98-E6AE-4B15-ACE1-3ABBABDD0194}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C40B2062-B2CF-4B47-B935-9C811D316DE0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Utilities.Core.Tests", "test\Dime.Utilities.Core.Tests.csproj", "{5CA1DBD2-88B4-4AE7-8A37-ECC8E2AFA7DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E7959428-B401-4471-A3E4-20F8590CC2BF}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,18 +37,5 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EC9C90CC-520A-468A-9AC9-82332B933DD1}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://dimenicsbe.visualstudio.com/defaultcollection
-		SccProjectUniqueName0 = core\\Dime.Utilities.Core.csproj
-		SccProjectName0 = core
-		SccLocalPath0 = core
-		SccLocalPath1 = .
-		SccProjectUniqueName2 = test\\Dime.Utilities.Core.Tests.csproj
-		SccProjectTopLevelParentUniqueName2 = Dime.Utilities.Core.sln
-		SccProjectName2 = test
-		SccLocalPath2 = test
 	EndGlobalSection
 EndGlobal

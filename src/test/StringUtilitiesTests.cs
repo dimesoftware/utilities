@@ -116,5 +116,13 @@ namespace Dime.Utilities.Core.Tests
         [Trait("Category", "String")]
         public void SplitUpTo_StringIsNotEmpty_ReturnsCollection(string text, int chunk, int collectionSize)
             => True(text.SplitUpTo(chunk).Count() == collectionSize);
+
+        [Fact]
+        [Trait("Category", "String")]
+        public void String_TrimWhitespaces_RemovesWhiteSpaces()
+        {
+            string text = "The Age of Pamparius";
+            True(text.TrimWhitespace() == "TheAgeofPamparius");
+        }
     }
 }
