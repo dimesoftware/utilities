@@ -24,19 +24,17 @@ namespace System.Reflection
         {
             Type type = enumerationValue.GetType();
             if (!type.GetTypeInfo().IsEnum)
-                throw new ArgumentException(string.Format("Value must be of enum type: {0}", enumerationValue), "enumerationValue");
+                throw new ArgumentException($"Value must be of enum type: {enumerationValue}", nameof(enumerationValue));
 
             // Tries to find a DescriptionAttribute for a potential friendly name for the enum
             MemberInfo[] memberInfo = type.GetMember(enumerationValue.ToString());
-            if (memberInfo != null && memberInfo.Length > 0)
-            {
-                var attributes = memberInfo[0].GetCustomAttributes(typeof(DescriptionAttribute), false);
-                if (attributes != null && attributes.Any())
-                    return ((DescriptionAttribute)attributes.ElementAt(0)).Description;
-            }
+            if (memberInfo.Length <= 0)
+                return enumerationValue.ToString();
 
-            // If there is no description attribute, just return the ToString of the enum
-            return enumerationValue.ToString();
+            object[] attributes = memberInfo[0].GetCustomAttributes(typeof(DescriptionAttribute), false);
+            return attributes.Any()
+                ? ((DescriptionAttribute)attributes.ElementAt(0)).Description 
+                : enumerationValue.ToString(); 
         }
 
         /// <summary>
@@ -61,7 +59,7 @@ namespace System.Reflection
                     return enumValue;
             }
 
-            throw new ArgumentException(string.Format("Could not extract enum from this value: {0}", description), "description");
+            throw new ArgumentException($"Could not extract enum from this value: {description}", nameof(description));
         }
     }
 }

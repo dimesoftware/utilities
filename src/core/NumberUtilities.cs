@@ -60,10 +60,11 @@ namespace Dime.Utilities
             => number.GetValueOrDefault() == default(int) ? null : number;
 
         /// <summary>
-        ///
+        /// 
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="input"></param>
+        /// <param name="property"></param>
         /// <returns></returns>
         public static string Format<T>(this int input, string property)
         {

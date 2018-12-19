@@ -71,9 +71,9 @@ namespace Dime.Utilities
         public static string RemoveUnwantedCharacters(this string input, IEnumerable<char> forbiddenCharacters)
         {
             StringBuilder builder = new StringBuilder(input.Length);
-            for (int i = 0; i < input.Length; i++)
-                if (char.IsDigit(input[i]) || !forbiddenCharacters.Contains(input[i]))
-                    builder.Append(input[i]);
+            foreach (char t in input)
+                if (char.IsDigit(t) || !forbiddenCharacters.Contains(t))
+                    builder.Append(t);
 
             return builder.ToString();
         }

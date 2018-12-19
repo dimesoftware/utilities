@@ -11,6 +11,9 @@ namespace Dime.Utilities.Core.Tests
         Item1 = 1,
 
         [Description("Item2Description")]
-        Item2 = 1
+        Item2 = 2,
+
+        [Description("")]
+        Item3 = 3
     }
 }

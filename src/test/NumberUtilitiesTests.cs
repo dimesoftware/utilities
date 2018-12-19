@@ -1,4 +1,5 @@
 ﻿using Xunit;
+using Xunit.Sdk;
 using static Xunit.Assert;
 
 namespace Dime.Utilities.Core.Tests
@@ -72,7 +73,7 @@ namespace Dime.Utilities.Core.Tests
 
         [Theory]
         [Trait("Category", "Number")]
-        [InlineData(null)]        
+        [InlineData(null)]
         public void GetNullIfZero_Int_Null(int? value)
             => Null(value.GetNullIfZero());
 
@@ -85,8 +86,17 @@ namespace Dime.Utilities.Core.Tests
 
         [Theory]
         [Trait("Category", "Number")]
-        [InlineData(null)]        
+        [InlineData(null)]
         public void GetNullIfZero_Long_Null(long? value)
             => Null(value.GetNullIfZero());
+
+        [Fact]
+        [Trait("Category", "Number")]
+        public void Format()
+        {
+            Customer customer = new Customer() { Id = 1000 };
+            string formattedCustomerId = customer.Id.Format<Customer>(nameof(Customer.Id));
+            True(formattedCustomerId == "1.000,0");
+        }
     }
 }

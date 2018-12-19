@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 using static Xunit.Assert;
@@ -105,7 +106,7 @@ namespace Dime.Utilities.Core.Tests
         [InlineData("Superfragilisticexpialidocious", 5, 6)]
         [InlineData("123456789", 2, 4)]
         [Trait("Category", "String")]
-        public void Split_StringIsNotEmpty_ReturnsCollection(string text, int chunk, int collectionSize) 
+        public void Split_StringIsNotEmpty_ReturnsCollection(string text, int chunk, int collectionSize)
             => True(text.Split(chunk).Count() == collectionSize);
 
         [Theory]
@@ -123,6 +124,42 @@ namespace Dime.Utilities.Core.Tests
         {
             string text = "The Age of Pamparius";
             True(text.TrimWhitespace() == "TheAgeofPamparius");
+        }
+
+        [Fact]
+        [Trait("Category", "String")]
+        public void String_RemoveUnwantedCharacters_ExcludesCharacters()
+        {
+            string text = "Th€ @ge of Pampariu$";
+            List<char> charactersToExclude = new List<char>() { '@', '€', '$' };
+            True(text.RemoveUnwantedCharacters(charactersToExclude) == "Th ge of Pampariu");
+        }
+
+        [Fact]
+        [Trait("Category", "String")]
+        public void String_Base64Encoding_EncodesAndDecodesToPlainText()
+        {
+            string plainText = "Hello World!";
+            string encodedText = plainText.Base64Encode();
+
+            True(encodedText == "SGVsbG8gV29ybGQh");
+            True(encodedText.Base64Decode() == plainText);
+        }
+
+        [Fact]
+        [Trait("Category", "String")]
+        public void String_Coalesce_TakesFirstOrDefault()
+        {
+            List<string> texts = new List<string>() { "", "World", "", "Cruel", "World" };
+            True(StringUtilities.Coalesce(texts.ToArray()) == "World");
+        }
+
+        [Fact]
+        [Trait("Category", "String")]
+        public void String_TrimWhiteSpace_Trims()
+        {
+            string text = " this is  a text    full of white spaces !   ";
+            True(text.TrimWhitespace() == "thisisatextfullofwhitespaces!");
         }
     }
 }

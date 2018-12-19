@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 
 namespace System
 {
@@ -6,12 +7,13 @@ namespace System
     /// Represents a custom queue type
     /// </summary>
     /// <typeparam name="T">The type of the items in the queue</typeparam>
+    [ExcludeFromCodeCoverage]
     public class EventQueue<T>
     {
         #region Constructor
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="EventQueue"/> class
+        /// Initializes a new instance of the <see cref="EventQueue{T}"/> class
         /// </summary>
         public EventQueue()
         {
@@ -37,13 +39,7 @@ namespace System
         /// <summary>
         /// Gets the amount of items in the queue
         /// </summary>
-        public int Count
-        {
-            get
-            {
-                return _queue.Count;
-            }
-        }
+        public int Count => _queue.Count;
 
         #endregion Properties
 
@@ -52,20 +48,12 @@ namespace System
         /// <summary>
         /// 
         /// </summary>
-        protected virtual void OnAdded()
-        {
-            if (Added != null)
-                Added(this, EventArgs.Empty);
-        }
+        protected virtual void OnAdded() => Added?.Invoke(this, EventArgs.Empty);
 
         /// <summary>
         ///
         /// </summary>
-        protected virtual void OnRemoved()
-        {
-            if (Removed != null)
-                Removed(this, EventArgs.Empty);
-        }
+        protected virtual void OnRemoved() => Removed?.Invoke(this, EventArgs.Empty);
 
         /// <summary>
         ///

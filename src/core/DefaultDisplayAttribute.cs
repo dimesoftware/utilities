@@ -1,8 +1,11 @@
-﻿namespace System
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace System
 {
     /// <summary>
     /// Represents an attribute for the default display of fields
     /// </summary>
+    [ExcludeFromCodeCoverage]
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = true)]
     public class DefaultDisplayAttribute : Attribute
     {

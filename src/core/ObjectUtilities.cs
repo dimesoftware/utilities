@@ -20,10 +20,7 @@
             if (!type.GetTypeInfo().IsValueType)
                 return true;
 
-            if (Nullable.GetUnderlyingType(type) != null)
-                return true;
-
-            return false;
+            return Nullable.GetUnderlyingType(type) != null;
         }
 
         /// <summary>

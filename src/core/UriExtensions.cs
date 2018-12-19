@@ -31,7 +31,7 @@ namespace Dime.Utilities
                 amountOfNodes -= 1;
             }
 
-            return amountOfNodes >= 2 ? string.Format("{0}", nodes[startNode]) : string.Empty;
+            return amountOfNodes >= 2 ? $"{nodes[startNode]}" : string.Empty;
         }
     }
 }

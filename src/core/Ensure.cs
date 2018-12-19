@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 
 namespace System
@@ -7,6 +8,7 @@ namespace System
     /// <summary>
     /// Useful helper to validate the state of the object.
     /// </summary>
+    [ExcludeFromCodeCoverage]
     [DebuggerStepThrough]
     public static class Ensure
     {
