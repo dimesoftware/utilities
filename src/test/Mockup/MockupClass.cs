@@ -6,7 +6,7 @@ namespace Dime.Utilities.Core.Tests
     {
         public string Name { get; set; }
 
-        [DisplayFormat(DataFormatString = "{0:N1}")]
+        [DisplayFormat(DataFormatString = "{0:N0}")]
         public int Id { get; set; }
     }
 }

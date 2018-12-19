@@ -96,7 +96,7 @@ namespace Dime.Utilities.Core.Tests
         {
             Customer customer = new Customer() { Id = 1000 };
             string formattedCustomerId = customer.Id.Format<Customer>(nameof(Customer.Id));
-            True(formattedCustomerId == "1.000,0");
+            True(formattedCustomerId == "1000");
         }
     }
 }
