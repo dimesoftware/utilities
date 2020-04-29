@@ -34,7 +34,7 @@ using System;
 
 public void Main(params string[] args)
 {
-    string truncatedString = "Hello world".Truncate(6); // Returns "Hello w";
+    string truncatedString = "Hello world".Truncate(7); // Returns "Hello w";
 }
 ```
 
