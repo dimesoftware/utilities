@@ -8,11 +8,11 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.1</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1;net461;netcoreapp2.0</TargetFrameworks>
     <DebugType>portable</DebugType>
-    <AssemblyName>Dime.Utilities.Core.Tests</AssemblyName>
+    <AssemblyName>Dime.Utilities.Tests</AssemblyName>
     <OutputType>Library</OutputType>
-    <PackageId>Dime.Utilities.Core.Tests</PackageId>
+    <PackageId>Dime.Utilities.Tests</PackageId>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
@@ -24,11 +24,11 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\core\Dime.Utilities.Core.csproj" />    
+    <ProjectReference Include="..\core\Dime.Utilities.csproj" />    
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1">
       <PrivateAssets>all</PrivateAssets>

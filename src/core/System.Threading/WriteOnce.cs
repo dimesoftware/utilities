@@ -23,7 +23,7 @@
             set
             {
                 if (_hasValue)
-                    throw new InvalidOperationException("Value already set");
+                    return;
 
                 ValueOrDefault = value;
                 _hasValue = true;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Xunit;
 
-namespace Dime.Utilities.Core.Tests
+namespace Dime.Utilities.Tests
 {
     public class DictionaryUtilitiesTests
     {

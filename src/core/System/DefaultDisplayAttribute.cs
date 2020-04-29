@@ -6,7 +6,7 @@ namespace System
     /// Represents an attribute for the default display of fields
     /// </summary>
     [ExcludeFromCodeCoverage]
-    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = true)]
+    [AttributeUsage(AttributeTargets.Class)]
     public class DefaultDisplayAttribute : Attribute
     {
         #region Constructor

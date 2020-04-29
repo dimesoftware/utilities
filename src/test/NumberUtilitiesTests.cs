@@ -1,8 +1,8 @@
-﻿using Xunit;
-using Xunit.Sdk;
+﻿using System;
+using Xunit;
 using static Xunit.Assert;
 
-namespace Dime.Utilities.Core.Tests
+namespace Dime.Utilities.Tests
 {
     public class NumberUtilitiesTests
     {

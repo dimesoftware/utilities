@@ -2,7 +2,7 @@
 using System.Threading;
 using Xunit;
 
-namespace Dime.Utilities.Core.Tests
+namespace Dime.Utilities.Tests
 {
     public class WriteOnceTests
     {
@@ -27,11 +27,12 @@ namespace Dime.Utilities.Core.Tests
 
         [Fact]
         [Trait("Category", "WriteOnce")]
-        public void WriteOnce_SetsTwice_ThrowsError()
+        public void WriteOnce_SetsTwice_ReturnsOriginal()
         {
             WriteOnce<string> txt = new WriteOnce<string> { Value = "Hello world" };
+            txt.Value = "Hello again";
+
             Assert.True(txt.Value == "Hello world");
-            Assert.Throws<InvalidOperationException>(() => txt.Value = "Hello again");
         }
     }
 }

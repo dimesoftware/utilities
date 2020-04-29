@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Xunit;
 
-namespace Dime.Utilities.Core.Tests
+namespace Dime.Utilities.Tests
 {
     public class ListExtensionsTests
     {

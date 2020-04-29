@@ -8,12 +8,12 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Description>[DEPRECATED] All purpose utilities that extend the capabilities of the most common Microsoft assemblies</Description>
+    <Description>All purpose utilities that extend the capabilities of the most common Microsoft assemblies</Description>
     <VersionPrefix>1.2.2</VersionPrefix>
     <Authors>Dimenics</Authors>
-    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
-    <AssemblyName>Dime.Utilities.Core</AssemblyName>
-    <PackageId>Dime.Utilities.Core</PackageId>
+    <TargetFrameworks>netstandard2.0;net461;netstandard2.1</TargetFrameworks>
+    <AssemblyName>Dime.Utilities</AssemblyName>
+    <PackageId>Dime.Utilities</PackageId>
     <PackageIconUrl>http://dimenuget.azurewebsites.net/Images/dimenuget.png</PackageIconUrl> 
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
@@ -29,11 +29,7 @@
     <PackageProjectUrl>http://www.dimenics.com/products/dime-scheduler/</PackageProjectUrl>
     <RepositoryUrl>https://dimenicsbe.visualstudio.com/DefaultCollection/Dime.Scheduler V2</RepositoryUrl>
     <RepositoryType>Visual Studio Team Services</RepositoryType>
-    <PackageReleaseNotes>- 1.2.2: Only target .NET Standard 2.0
-- 1.2.3: Also target .NET 4.6.1
-- 1.3.0: String utilities
-- 1.3.1: String utility for uneven chunks
-- 1.3.2 - 1.3.4: Refactor string extensions from Dime.Scheduler</PackageReleaseNotes>
+    <PackageReleaseNotes></PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

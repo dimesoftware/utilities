@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Dime.Utilities
+namespace System
 {
     /// <summary>
     /// Extensions on top of the <see cref="string"/> class

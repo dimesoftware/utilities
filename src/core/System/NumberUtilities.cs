@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
-namespace Dime.Utilities
+namespace System
 {
     /// <summary>
     /// Utilities that extend the capabilities of working with numbers
@@ -48,7 +48,7 @@ namespace Dime.Utilities
         /// <param name="number">The number to inspect</param>
         /// <returns>The original number if the value doesn't equal zero</returns>
         public static int? GetNullIfZero(this int? number) 
-            => number.GetValueOrDefault() == default(int) ? null : number;
+            => number.GetValueOrDefault() == default ? null : number;
 
         /// <summary>
         /// Returns null if the value is zero.

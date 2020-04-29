@@ -1,4 +1,4 @@
-﻿namespace Dime.Utilities.Core.Tests
+﻿namespace Dime.Utilities.Tests
 {
     /// <summary>
     ///

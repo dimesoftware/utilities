@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Dime.Utilities
+namespace System
 {
     /// <summary>
     /// Extensions on top the <see cref="Uri"/> class.
@@ -25,11 +25,11 @@ namespace Dime.Utilities
 
             amountOfNodes = nodes.Length;
 
-            if (nodes[0] == "www")
-            {
-                startNode = 1;
-                amountOfNodes -= 1;
-            }
+            if (nodes[0] != "www") 
+                return amountOfNodes >= 2 ? $"{nodes[startNode]}" : string.Empty;
+
+            startNode = 1;
+            amountOfNodes -= 1;
 
             return amountOfNodes >= 2 ? $"{nodes[startNode]}" : string.Empty;
         }

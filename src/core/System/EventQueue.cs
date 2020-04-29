@@ -62,7 +62,7 @@ namespace System
         public virtual void Enqueue(T item)
         {
             _queue.Enqueue(item);
-            OnAdded();
+            this.OnAdded();
         }
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace System
         public virtual T Dequeue()
         {
             T item = _queue.Dequeue();
-            OnRemoved();
+            this.OnRemoved();
             return item;
         }
 

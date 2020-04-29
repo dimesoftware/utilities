@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Dime.Utilities.Core.Tests
+namespace Dime.Utilities.Tests
 {
     public class Customer
     {

@@ -2,7 +2,7 @@
 using Xunit;
 using static Xunit.Assert;
 
-namespace Dime.Utilities.Core.Tests
+namespace Dime.Utilities.Tests
 {
     public class UriExtensionsTests
     {

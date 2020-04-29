@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Dime.Utilities.Core.Tests
+namespace Dime.Utilities.Tests
 {
     public enum MockupEnum
     {
