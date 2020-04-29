@@ -37,8 +37,8 @@ namespace Dime.Utilities.Tests
             };
 
             Customer newCustomer = customerDictionary.GetOrCreate("Handsome B. Wonderful");
-            Assert.True(newCustomer.Id == default(int));
-            Assert.True(newCustomer.Name == default(string));
+            Assert.True(newCustomer.Id == default);
+            Assert.True(newCustomer.Name == default);
         }
 
         [Fact]

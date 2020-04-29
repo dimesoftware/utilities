@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.1;net461;netcoreapp2.0</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1;net461</TargetFrameworks>
     <DebugType>portable</DebugType>
     <AssemblyName>Dime.Utilities.Tests</AssemblyName>
     <OutputType>Library</OutputType>
