@@ -1,6 +1,6 @@
 # Dime.Utilities
 
-![Build status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/Utilities%20Core%20-%20MAIN%20-%20CI?branchName=master)
+![Build status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.dime-utilities?branchName=master) ![Code coverage](https://img.shields.io/azure-devops/coverage/dimenicsbe/Utilities/150/master)
 
 ## Introduction
 
@@ -35,6 +35,10 @@ using System;
 public void Main(params string[] args)
 {
     string truncatedString = "Hello world".Truncate(7); // Returns "Hello w";
+
+    List<int> someList = new List<int> { 1,2,3,4,5 };
+    someList.AddIf(10, x => x > 0); // Adds to the list
+    someList.AddIf(-10, x => x > 0); // Doesn't add to the list
 }
 ```
 
