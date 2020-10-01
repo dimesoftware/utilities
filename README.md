@@ -1,6 +1,6 @@
 # Dime.Utilities
 
-![Build status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.dime-utilities?branchName=master) ![Code coverage](https://img.shields.io/azure-devops/coverage/dimenicsbe/Utilities/150/master)
+![Build status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.dime-utilities?branchName=master) ![CodeQL](https://github.com/dimenics/utilities/workflows/CodeQL/badge.svg) ![Code coverage](https://img.shields.io/azure-devops/coverage/dimenicsbe/Utilities/150/master)
 
 ## Introduction
 
