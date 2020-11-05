@@ -2,7 +2,7 @@
 
 # All-purpose utilities
 
-![Build status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.dime-utilities?branchName=master) ![CodeQL](https://github.com/dimenics/utilities/workflows/CodeQL/badge.svg) ![Code coverage](https://img.shields.io/azure-devops/coverage/dimenicsbe/Utilities/150/master)
+[![Build Status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.utilities?branchName=master)](https://dev.azure.com/dimenicsbe/Utilities/_build/latest?definitionId=172&branchName=master) ![CodeQL](https://github.com/dimenics/utilities/workflows/CodeQL/badge.svg) ![Code coverage](https://img.shields.io/azure-devops/coverage/dimenicsbe/Utilities/172/master)
 
 ## Introduction
 

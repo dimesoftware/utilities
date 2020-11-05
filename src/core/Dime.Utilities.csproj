@@ -11,7 +11,7 @@
     <Description>All purpose utilities that extend the capabilities of the most common Microsoft assemblies</Description>
     <VersionPrefix>1.3.6</VersionPrefix>
     <Authors>Dimenics</Authors>
-    <TargetFrameworks>netstandard2.0;net461;netstandard2.1</TargetFrameworks>
+    <TargetFrameworks>net461;netstandard2.1</TargetFrameworks>
     <AssemblyName>Dime.Utilities</AssemblyName>
     <PackageId>Dime.Utilities</PackageId>
     <PackageIconUrl>http://dimenuget.azurewebsites.net/Images/dimenuget.png</PackageIconUrl> 
