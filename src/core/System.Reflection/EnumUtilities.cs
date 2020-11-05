@@ -11,7 +11,7 @@ namespace System.Reflection
         /// <typeparam name="T"></typeparam>
         /// <param name="value"></param>
         /// <returns></returns>
-        public static T ToEnum<T>(this string value) 
+        public static T ToEnum<T>(this string value)
             => (T)Enum.Parse(typeof(T), value, true);
 
         /// <summary>
@@ -33,8 +33,8 @@ namespace System.Reflection
 
             object[] attributes = memberInfo[0].GetCustomAttributes(typeof(DescriptionAttribute), false);
             return attributes.Any()
-                ? ((DescriptionAttribute)attributes.ElementAt(0)).Description 
-                : enumerationValue.ToString(); 
+                ? ((DescriptionAttribute)attributes.ElementAt(0)).Description
+                : enumerationValue.ToString();
         }
 
         /// <summary>

@@ -1,4 +1,6 @@
-# Dime.Utilities
+<p align="center"><img src="assets/logo.png?raw=true" width="350" alt="Logo"></p>
+
+# All-purpose utilities
 
 ![Build status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.dime-utilities?branchName=master) ![CodeQL](https://github.com/dimenics/utilities/workflows/CodeQL/badge.svg) ![Code coverage](https://img.shields.io/azure-devops/coverage/dimenicsbe/Utilities/150/master)
 

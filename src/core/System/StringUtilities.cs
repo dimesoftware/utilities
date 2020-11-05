@@ -29,7 +29,7 @@ namespace System
         /// </summary>
         /// <param name="value">The string to split</param>
         /// <param name="chunkSize">The maximum chunk size</param>
-        /// <returns>A list of chunks that make up the entire string</returns>        
+        /// <returns>A list of chunks that make up the entire string</returns>
         public static IEnumerable<string> Split(this string value, int chunkSize)
             => Enumerable.Range(0, value.Length / chunkSize)
                 .Select(i => value.Substring(i * chunkSize, chunkSize));
@@ -67,7 +67,7 @@ namespace System
         /// </summary>
         /// <param name="input"></param>
         /// <param name="forbiddenCharacters"></param>
-        /// <returns></returns>        
+        /// <returns></returns>
         public static string RemoveUnwantedCharacters(this string input, IEnumerable<char> forbiddenCharacters)
         {
             StringBuilder builder = new StringBuilder(input.Length);
@@ -104,7 +104,7 @@ namespace System
         /// Gets the first non-empty string in the collection
         /// </summary>
         /// <param name="items">The array of strings</param>
-        /// <returns>The first string that is not null or empty.</returns>        
+        /// <returns>The first string that is not null or empty.</returns>
         public static string Coalesce(params string[] items)
             => items.FirstOrDefault(s => !string.IsNullOrEmpty(s));
 

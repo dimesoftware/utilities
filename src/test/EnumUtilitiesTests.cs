@@ -10,7 +10,7 @@ namespace Dime.Utilities.Tests
         [Trait("Category", "Enum")]
         public void Enum_ToEnum_ValidString_ConvertsToEnum()
         {
-           Assert.True("Item0".ToEnum<MockupEnum>() == MockupEnum.Item0);
+            Assert.True("Item0".ToEnum<MockupEnum>() == MockupEnum.Item0);
         }
 
         [Fact]

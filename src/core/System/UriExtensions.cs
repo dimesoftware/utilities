@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace System
+﻿namespace System
 {
     /// <summary>
     /// Extensions on top the <see cref="Uri"/> class.
@@ -25,7 +23,7 @@ namespace System
 
             amountOfNodes = nodes.Length;
 
-            if (nodes[0] != "www") 
+            if (nodes[0] != "www")
                 return amountOfNodes >= 2 ? $"{nodes[startNode]}" : string.Empty;
 
             startNode = 1;

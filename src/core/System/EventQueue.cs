@@ -46,7 +46,7 @@ namespace System
         #region Methods
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         protected virtual void OnAdded() => Added?.Invoke(this, EventArgs.Empty);
 
