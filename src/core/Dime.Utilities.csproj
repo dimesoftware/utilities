@@ -11,7 +11,7 @@
     <Description>All purpose utilities that extend the capabilities of the most common Microsoft assemblies</Description>
     <VersionPrefix>1.3.7</VersionPrefix>
     <Authors>Dimenics</Authors>
-    <TargetFrameworks>net461;netstandard2.0;netstandard2.1</TargetFrameworks>
+    <TargetFrameworks>net461;netstandard2.1</TargetFrameworks>
     <AssemblyName>Dime.Utilities</AssemblyName>
     <PackageId>Dime.Utilities</PackageId>
     <PackageIconUrl>https://github.com/dimenics/dimenics/blob/master/assets/dimenicslogo.png?raw=true</PackageIconUrl>
