@@ -16,4 +16,11 @@ namespace Dime.Utilities.Tests
         [Description("")]
         Item3 = 3
     }
+
+    public enum Crud
+    {
+        Create,
+        Update,
+        Delete
+    }
 }

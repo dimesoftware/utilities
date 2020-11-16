@@ -9,4 +9,10 @@ namespace Dime.Utilities.Tests
         [DisplayFormat(DataFormatString = "{0:F0}")]
         public int Id { get; set; }
     }
+
+    public class Order
+    {
+        [DisplayFormat(DataFormatString = "{0:F0}")]
+        public int Id { get; set; }
+    }
 }
