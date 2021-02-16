@@ -1,4 +1,6 @@
-﻿namespace System.Collections.Generic
+﻿using System.Linq;
+
+namespace System.Collections.Generic
 {
     /// <summary>
     /// Extensions on top of the generic <see cref="List{T}"/> class
@@ -28,6 +30,14 @@
         {
             if (predicate(value))
                 collection.Add(value);
+        }
+
+        public static (IEnumerable<T>, IEnumerable<T>) Split<T>(this IEnumerable<T> source, Func<T, bool> predicate)
+        {
+            IEnumerable<T> trueList = source.Where(predicate);
+            IEnumerable<T> falseList = source.Where(x => !predicate(x));
+
+            return (trueList, falseList);
         }
     }
 }
