@@ -16,5 +16,16 @@ namespace Dime.Utilities.Tests
             string subdomain = uri.GetSubdomain();
             True(sub == subdomain);
         }
+
+        [Theory]
+        [Trait("Category", "URI")]
+        [InlineData("client1")]
+        [InlineData("client-1")]
+        public void GetSubDomain_ValidUrl_www_WithSubdomain_ReturnsSubdomain(string sub)
+        {
+            Uri uri = new Uri($"http://www.{sub}.dimescheduler.com");
+            string subdomain = uri.GetSubdomain();
+            True(sub == subdomain);
+        }
     }
 }
