@@ -1,8 +1,13 @@
 <p align="center"><img src="assets/logo.png?raw=true" width="350" alt="Logo"></p>
 
-# All-purpose utilities
+<h1 align="center">
+All-purpose utilities
+</p>
 
-[![Build Status](https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.utilities?branchName=master)](https://dev.azure.com/dimenicsbe/Utilities/_build/latest?definitionId=172&branchName=master) ![Code coverage](https://img.shields.io/azure-devops/coverage/dimenicsbe/Utilities/172/master)
+<p align="center">
+<img src="https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.utilities?branchName=master" />
+<img src="https://img.shields.io/azure-devops/coverage/dimenicsbe/Utilities/172/master" />
+</p>
 
 ## Introduction
 
@@ -31,7 +36,7 @@ Use the package manager NuGet to install Dime.Utilities:
 
 ## Usage
 
-``` csharp
+```csharp
 using System;
 
 public void Main(params string[] args)
