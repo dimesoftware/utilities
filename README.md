@@ -5,8 +5,8 @@ All-purpose utilities
 </p>
 
 <p align="center">
-<img src="https://dev.azure.com/dimenicsbe/Utilities/_apis/build/status/dimenics.utilities?branchName=master" />
-<img src="https://img.shields.io/azure-devops/coverage/dimenicsbe/Utilities/172/master" />
+<img src="https://dev.azure.com/dimesoftware/Utilities/_apis/build/status/dimenics.utilities?branchName=master" />
+<img src="https://img.shields.io/azure-devops/coverage/dimesoftware/Utilities/172/master" />
 </p>
 
 ## Introduction
