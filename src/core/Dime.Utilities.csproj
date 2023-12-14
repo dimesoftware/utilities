@@ -1,52 +1,41 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup Label="Globals">
-    <SccProjectName>SAK</SccProjectName>
-    <SccProvider>SAK</SccProvider>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccLocalPath>SAK</SccLocalPath>
-  </PropertyGroup>
+	<PropertyGroup>
+		<Description>All purpose utilities that extend the capabilities of the most common Microsoft assemblies</Description>
+		<VersionPrefix>1.4.0</VersionPrefix>
+		<Authors>Dime Software</Authors>
+		<TargetFrameworks>net8.0</TargetFrameworks>
+		<AssemblyName>Dime.Utilities</AssemblyName>
+		<PackageId>Dime.Utilities</PackageId>
+		<LangVersion>latest</LangVersion>
+		<PackageIconUrl>https://cdn.dime-software.com/dime-software/logo-shape.png</PackageIconUrl>
+		<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+		<GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+		<Version>1.4.0</Version>
+		<FileVersion>1.4.0</FileVersion>
+		<NeutralLanguage>en</NeutralLanguage>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<IncludeSource>True</IncludeSource>
+		<IncludeSymbols>True</IncludeSymbols>
+		<Copyright>Copyright © 2023</Copyright>
+		<PackageProjectUrl>https://github.com/dimemsoftware/utilities</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/dimemsoftware/utilities</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageReleaseNotes></PackageReleaseNotes>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageTags>utilities</PackageTags>
+	</PropertyGroup>
 
-  <PropertyGroup>
-    <Description>All purpose utilities that extend the capabilities of the most common Microsoft assemblies</Description>
-    <VersionPrefix>1.3.10</VersionPrefix>
-    <Authors>Dime Software</Authors>
-    <TargetFrameworks>net461;netstandard2.0;netstandard2.1;net5.0</TargetFrameworks>
-    <AssemblyName>Dime.Utilities</AssemblyName>
-    <PackageId>Dime.Utilities</PackageId>
-    <LangVersion>latest</LangVersion>
-    <PackageIconUrl>https://cdn.dime-software.com/dime-software/logo-shape.png</PackageIconUrl>
-    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-    <Version>1.3.11.0</Version>
-    <NeutralLanguage>en</NeutralLanguage>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <IncludeSource>True</IncludeSource>
-    <IncludeSymbols>True</IncludeSymbols>
-    <FileVersion>1.3.11.0</FileVersion>
-    <Copyright>Copyright © 2021</Copyright>
-    <PackageProjectUrl>https://github.com/dimenics/utilities</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/dimenics/utilities</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageReleaseNotes></PackageReleaseNotes>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageTags>utilities</PackageTags>
-  </PropertyGroup>
+	<ItemGroup>
+		<Compile Remove="Properties\**" />
+		<EmbeddedResource Remove="Properties\**" />
+		<None Remove="Properties\**" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Compile Remove="Properties\**" />
-    <EmbeddedResource Remove="Properties\**" />
-    <None Remove="Properties\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
-    <PackageReference Include="System.ComponentModel.Primitives" Version="4.3.0" />
-    <PackageReference Include="System.ComponentModel.TypeConverter" Version="4.3.0" />
-    <PackageReference Include="System.Reflection" Version="4.3.0" />
-    <PackageReference Include="System.ValueTuple" Version="4.5.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="System.ValueTuple" Version="4.5.0" />
+	</ItemGroup>
 
 </Project>
