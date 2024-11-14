@@ -131,7 +131,7 @@ namespace Dime.Utilities.Tests
         public void String_RemoveUnwantedCharacters_ExcludesCharacters()
         {
             string text = "Th€ @ge of Pampariu$";
-            List<char> charactersToExclude = new List<char>() { '@', '€', '$' };
+            List<char> charactersToExclude = ['@', '€', '$'];
             True(text.RemoveUnwantedCharacters(charactersToExclude) == "Th ge of Pampariu");
         }
 
@@ -150,7 +150,7 @@ namespace Dime.Utilities.Tests
         [Trait("Category", "String")]
         public void String_Coalesce_TakesFirstOrDefault()
         {
-            List<string> texts = new List<string>() { "", "World", "", "Cruel", "World" };
+            List<string> texts = ["", "World", "", "Cruel", "World"];
             True(StringUtilities.Coalesce(texts.ToArray()) == "World");
         }
 

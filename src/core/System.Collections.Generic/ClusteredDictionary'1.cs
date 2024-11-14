@@ -13,8 +13,7 @@ namespace System.Collections.Generic
         /// The dictionary that gathers lists of objects per <see cref="Crud"/> and <see cref="Type"/>.
         /// It is effectively a two dimensional array but with the major difference that it stores (incompatible) types
         /// </summary>
-        private readonly Dictionary<Type, Dictionary<TKey, IEnumerable<object>>> _dict =
-            new Dictionary<Type, Dictionary<TKey, IEnumerable<object>>>();
+        private readonly Dictionary<Type, Dictionary<TKey, IEnumerable<object>>> _dict = [];
 
         /// <summary>
         /// Adds the list of items to the bucket of <see cref="crudType"/> for type <typeparamref name="T"/>
@@ -42,9 +41,7 @@ namespace System.Collections.Generic
         public IEnumerable<T> Get<T>(TKey crudType) where T : class
         {
             Dictionary<TKey, IEnumerable<object>> outerDictionary = _dict.GetOrCreate(typeof(T));
-            return outerDictionary.ContainsKey(crudType)
-                ? (outerDictionary[crudType] as IEnumerable<T>)?.ToList() ?? new List<T>()
-                : new List<T>();
+            return outerDictionary.ContainsKey(crudType) ? (outerDictionary[crudType] as IEnumerable<T>)?.ToList() ?? [] : [];
         }
     }
 }

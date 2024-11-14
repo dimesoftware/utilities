@@ -5,15 +5,11 @@
     /// </summary>
     public class EnumExtensionsTests
     {
-        #region Constructor
-
         /// <summary>
         ///
         /// </summary>
         public EnumExtensionsTests()
         {
         }
-
-        #endregion Constructor
     }
 }

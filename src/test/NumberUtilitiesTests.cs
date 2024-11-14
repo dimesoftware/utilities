@@ -27,14 +27,14 @@ namespace Dime.Utilities.Tests
         [InlineData(0)]
         [InlineData(-1)]
         [InlineData(-100)]
-        public void NullIfNegative_long_NullsAndNegatives(long? value)
-            => True(value.NullIfNegative() == null);
+        public void NullIfNegative_long_NullsAndNegatives(int? value)
+            => True(((long?)value).NullIfNegative() == null);
 
         [Theory]
         [Trait("Category", "Number")]
         [InlineData(1)]
-        public void NullIfNegative_long_ZeroesAndPositives(long? value)
-            => True(value.NullIfNegative() > 0);
+        public void NullIfNegative_long_ZeroesAndPositives(int? value)
+            => True(((long?)value).NullIfNegative() > 0);
 
         [Theory]
         [Trait("Category", "Number")]
@@ -81,8 +81,8 @@ namespace Dime.Utilities.Tests
         [Trait("Category", "Number")]
         [InlineData(1)]
         [InlineData(-1)]
-        public void GetNullIfZero_Long_NotNull(long? value)
-            => NotNull(value.GetNullIfZero());
+        public void GetNullIfZero_Long_NotNull(int? value)
+            => NotNull(((long?)value).GetNullIfZero());
 
         [Theory]
         [Trait("Category", "Number")]

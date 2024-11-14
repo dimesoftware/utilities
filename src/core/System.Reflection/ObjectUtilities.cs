@@ -30,6 +30,6 @@
         /// <param name="obj">The current object</param>
         /// <returns>True if the current object doesn't match <typeparamref name="T"/></returns>
         public static bool IsNot<T>(this object obj)
-            => !(obj is T);
+            => obj is not T;
     }
 }

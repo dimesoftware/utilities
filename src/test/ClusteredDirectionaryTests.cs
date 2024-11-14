@@ -12,47 +12,47 @@ namespace Dime.Utilities.Tests
         {
             ClusteredDictionary<Crud> crudBucket = new ClusteredDictionary<Crud>();
 
-            List<Customer> newCustomers = new List<Customer>
-            {
+            List<Customer> newCustomers =
+            [
                 new Customer { Id =  1},
                 new Customer { Id =  2}
-            };
+            ];
 
-            List<Customer> moreNewCustomers = new List<Customer>
-            {
+            List<Customer> moreNewCustomers =
+            [
                 new Customer { Id =  10000},
                 new Customer { Id =  10001}
-            };
+            ];
 
-            List<Customer> updatedCustomers = new List<Customer>
-            {
+            List<Customer> updatedCustomers =
+            [
                 new Customer { Id =  3},
                 new Customer { Id =  4}
-            };
+            ];
 
-            List<Customer> deletedCustomers = new List<Customer>
-            {
+            List<Customer> deletedCustomers =
+            [
                 new Customer { Id =  5},
                 new Customer { Id =  6}
-            };
+            ];
 
-            List<Order> newOrders = new List<Order>
-            {
+            List<Order> newOrders =
+            [
                 new Order { Id =  100},
                 new Order { Id =  200}
-            };
+            ];
 
-            List<Order> updatedOrders = new List<Order>
-            {
+            List<Order> updatedOrders =
+            [
                 new Order { Id =  300},
                 new Order { Id =  400}
-            };
+            ];
 
-            List<Order> deletedOrders = new List<Order>
-            {
+            List<Order> deletedOrders =
+            [
                 new Order { Id =  500},
                 new Order { Id =  600}
-            };
+            ];
 
             crudBucket.Add(Crud.Create, newCustomers);
             crudBucket.Add(Crud.Create, moreNewCustomers);
@@ -94,41 +94,41 @@ namespace Dime.Utilities.Tests
         {
             ClusteredDictionary<Crud> crudBucket = new ClusteredDictionary<Crud>();
 
-            List<Customer> newCustomers = new List<Customer>
-            {
+            List<Customer> newCustomers =
+            [
                 new Customer { Id =  1},
                 new Customer { Id =  2}
-            };
+            ];
 
-            List<Customer> updatedCustomers = new List<Customer>
-            {
+            List<Customer> updatedCustomers =
+            [
                 new Customer { Id =  3},
                 new Customer { Id =  4}
-            };
+            ];
 
-            List<Customer> deletedCustomers = new List<Customer>
-            {
+            List<Customer> deletedCustomers =
+            [
                 new Customer { Id =  5},
                 new Customer { Id =  6}
-            };
+            ];
 
-            List<Order> newOrders = new List<Order>
-            {
+            List<Order> newOrders =
+            [
                 new Order { Id =  100},
                 new Order { Id =  200}
-            };
+            ];
 
-            List<Order> updatedOrders = new List<Order>
-            {
+            List<Order> updatedOrders =
+            [
                 new Order { Id =  300},
                 new Order { Id =  400}
-            };
+            ];
 
-            List<Order> deletedOrders = new List<Order>
-            {
+            List<Order> deletedOrders =
+            [
                 new Order { Id =  500},
                 new Order { Id =  600}
-            };
+            ];
 
             crudBucket.Add(Crud.Update, updatedCustomers);
             crudBucket.Add(Crud.Delete, deletedCustomers);

@@ -10,8 +10,6 @@ namespace System
     [ExcludeFromCodeCoverage]
     public class EventQueue<T>
     {
-        #region Constructor
-
         /// <summary>
         /// Initializes a new instance of the <see cref="EventQueue{T}"/> class
         /// </summary>
@@ -19,10 +17,6 @@ namespace System
         {
             _queue = new Queue<T>();
         }
-
-        #endregion Constructor
-
-        #region Properties
 
         private readonly Queue<T> _queue;
 
@@ -40,10 +34,6 @@ namespace System
         /// Gets the amount of items in the queue
         /// </summary>
         public int Count => _queue.Count;
-
-        #endregion Properties
-
-        #region Methods
 
         /// <summary>
         ///
@@ -76,6 +66,5 @@ namespace System
             return item;
         }
 
-        #endregion Methods
     }
 }

@@ -2,9 +2,9 @@
 
 	<PropertyGroup>
 		<Description>All purpose utilities that extend the capabilities of the most common Microsoft assemblies</Description>
-		<VersionPrefix>1.4.0</VersionPrefix>
+		<VersionPrefix>1.5.0</VersionPrefix>
 		<Authors>Dime Software</Authors>
-		<TargetFrameworks>net8.0</TargetFrameworks>
+		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
 		<AssemblyName>Dime.Utilities</AssemblyName>
 		<PackageId>Dime.Utilities</PackageId>
 		<LangVersion>latest</LangVersion>
@@ -13,13 +13,13 @@
 		<GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
 		<GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
 		<GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
-		<Version>1.4.0</Version>
-		<FileVersion>1.4.0</FileVersion>
+		<Version>1.5.0</Version>
+		<FileVersion>1.5.0</FileVersion>
 		<NeutralLanguage>en</NeutralLanguage>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<IncludeSource>True</IncludeSource>
 		<IncludeSymbols>True</IncludeSymbols>
-		<Copyright>Copyright © 2023</Copyright>
+		<Copyright>Copyright © 2024</Copyright>
 		<PackageProjectUrl>https://github.com/dimemsoftware/utilities</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/dimemsoftware/utilities</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
