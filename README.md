@@ -1,19 +1,14 @@
-<p align="center"><img src="assets/logo.png?raw=true" width="350" alt="Logo"></p>
+<p align="center"><img src="assets/logo.png?raw=true" width="500" alt="Logo"></p>
 
 <h1 align="center">
-All-purpose utilities
-</p>
-
-<p align="center">
-<img src="https://dev.azure.com/dimesoftware/Utilities/_apis/build/status/dimenics.utilities?branchName=master" />
-<img src="https://img.shields.io/azure-devops/coverage/dimesoftware/Utilities/172/master" />
+Utilities
 </p>
 
 ## Introduction
 
 All-purpose utilities for commonly used assemblies.
 
-## Getting Started
+## Getting started
 
 - You must have Visual Studio 2019 Community or higher.
 - The dotnet cli is also highly recommended.
