@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Utilities", "core\Dime
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dime.Utilities.Tests", "test\Dime.Utilities.Tests.csproj", "{5CA1DBD2-88B4-4AE7-8A37-ECC8E2AFA7DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dime.Utilities.Serialization", "serialization\Dime.Utilities.Serialization\Dime.Utilities.Serialization.csproj", "{70736BA1-A601-4A0C-AE0C-99B9274FB4C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5CA1DBD2-88B4-4AE7-8A37-ECC8E2AFA7DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CA1DBD2-88B4-4AE7-8A37-ECC8E2AFA7DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CA1DBD2-88B4-4AE7-8A37-ECC8E2AFA7DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70736BA1-A601-4A0C-AE0C-99B9274FB4C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70736BA1-A601-4A0C-AE0C-99B9274FB4C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70736BA1-A601-4A0C-AE0C-99B9274FB4C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70736BA1-A601-4A0C-AE0C-99B9274FB4C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
